@@ -174,9 +174,4 @@ fabric.properties
 #### custom
 ###########
 
-cash/
-bin/
-
-#setting are personal and should not be uploaded
-settings.php
-*/setting.php
+/testing

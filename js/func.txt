@@ -1,0 +1,17 @@
+-- hallo
+	says to the other nodes that it is still alive
+
+-- peers
+    asks the other nodes for more peers
+
+-- request
+	request a piece of information of the network
+
+-- goodbye
+	says to the network that is this client is leaving
+
+	-------------------------------
+	DISUSED
+
+	-- discover
+    	tries to find a node that is alive
