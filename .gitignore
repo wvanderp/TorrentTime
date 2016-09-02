@@ -175,3 +175,7 @@ fabric.properties
 ###########
 
 /testing
+
+
+# just for now
+/type.js

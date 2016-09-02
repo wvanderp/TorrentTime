@@ -1,17 +1,39 @@
 -- hallo
-	says to the other nodes that it is still alive
+   says to the other nodes that it is still alive
+   {"type": "hallo", "message": {"id": "324324324324234323"}};
 
 -- peers
     asks the other nodes for more peers
+   {"type": "peers", "message": {}};
 
 -- request
-	request a piece of information of the network
+   request a piece of information of the network
+   {"type": "request", "message": {"mbid": "2132132-21321adasd-23421asd"}};
 
 -- goodbye
-	says to the network that is this client is leaving
+   says to the network that is this client is leaving
+   {"type": "goodbye", "message": {"id": "324324324324234323"}};
 
-	-------------------------------
-	DISUSED
+-----------------------------------------
+ANSWERS
 
-	-- discover
-    	tries to find a node that is alive
+-- hallo answer
+   gives an hallo back
+   {"type": "halloAnswer", "message": {"id": "324324324324234323"}};
+
+-- peers answer
+    returns the peer list
+    {"type": "peersAnswer", "message": {"peerlist": [{"ip": "1.1.1.1", "port":"8888"}, {"ip": "192.169.3.2", "port": "8888"}]}}
+
+-- request answer
+   gives either a “I don’t know” or the data that is asked
+    {"type": "requestAnswer", "message": {"urls": ["url1", "url2", "url3"]}}
+
+-- goodbye answer
+   says goodbye
+   {"type": "goodbyeAnswer", "message": {}}
+-------------------------------
+DISUSED
+
+-- discover
+       tries to find a node that is alive

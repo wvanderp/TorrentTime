@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/wvanderp/musicTime#readme",
   "dependencies": {
+    "ip": "^1.1.3",
+    "lodash": "^4.15.0",
     "sha1": "^1.1.1"
   }
 }
